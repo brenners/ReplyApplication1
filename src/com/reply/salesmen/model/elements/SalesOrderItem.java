@@ -52,7 +52,7 @@ public class SalesOrderItem {
 		this.setObjectId(objectID);
 		this.setQuantity(quantity);
 		this.setProductId(productID);
-		this.setDescription(prodDescription);
+		this.setProdDescription(prodDescription);
 		this.setNumberInt(numberInt);
 	}
 	
@@ -147,14 +147,14 @@ public class SalesOrderItem {
 	/**
 	 * @return the prodDescription
 	 */
-	public String getDescription() {
+	public String getProdDescription() {
 		return prodDescription;
 	}
 
 	/**
 	 * @param prodDescription the prodDescription to set
 	 */
-	public void setDescription(String description) {
+	public void setProdDescription(String description) {
 		this.prodDescription = description;
 	}
 
