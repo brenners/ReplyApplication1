@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    >
+
+	<!--  <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:id="@+id/GridLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:columnCount="8"
+	    android:orientation="horizontal"
+	    tools:context="${relativePackage}.${activityClass}" >-->
+	
+    <!--<GridLayout 
+        android:id="@+id/GridLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:columnCount="8"
+	    android:orientation="horizontal">-->
+	    
+   	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="fill_vertical" 
+	    android:background="@android:color/black"
+	    >
+	    
+   	    <VideoView
+	        android:id="@+id/videoViewSettings"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="0dp"
+	        android:layout_marginBottom="0dp"
+	        android:layout_gravity="fill_vertical"
+	        android:configChanges="orientation|screenSize" />	    
+		
+	    <!-- Content -->
+		<FrameLayout 
+		    android:layout_marginTop="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginStart="20dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginEnd="20dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center|center" >
+  	        
+			<FrameLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="5dp"
+			    android:layout_gravity="top" 
+			    android:alpha="1"
+			    android:background="@android:color/holo_green_dark" >
+		    </FrameLayout>    
+	        
+		    <FrameLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="5dp"
+		        android:background="@android:color/background_light"
+		        android:alpha="0.70" >
+			        
+		        <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="top|fill_horizontal|center"			        
+			        android:text="@string/Settings"
+			        android:textSize="@android:dimen/app_icon_size"
+			        android:layout_marginStart="5dp"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginTop="2dp" />
+			
+				<TextView
+			        android:id="@+id/CB_MockData_Al_Label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="45dp"
+			        android:layout_marginRight="45dp"
+			        android:layout_marginTop="75dp"
+			        android:text="@string/UseMockAlways" />
+				
+			    <CheckBox
+			        android:id="@+id/CB_MockData_Al"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginStart="5dp"
+			        android:layout_marginTop="60dp"
+			        android:onClick="onClick_Listener"			        
+			        android:visibility="visible" >
+			        <requestFocus /> </CheckBox>
+				
+			    <TextView
+			        android:id="@+id/CB_MockData_Label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="45dp"
+			        android:layout_marginRight="45dp"
+			        android:layout_marginTop="115dp"
+			        android:text="@string/UseMock" />
+			    
+			    <CheckBox
+			        android:id="@+id/CB_MockData"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginStart="5dp"
+			        android:layout_marginTop="100dp"
+			        android:onClick="onClick_Listener"			        
+			        android:visibility="visible" />
+				
+				<TextView
+			        android:id="@+id/CB_SwitchURL_Label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="45dp"
+			        android:layout_marginRight="45dp"
+			        android:layout_marginTop="155dp"
+					android:text="@string/UseDevCon" />
+			    
+			    <Button 
+			        android:id="@+id/Btn_CheckURL"
+			        android:text="@string/ChooseUrlInPicker"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginStart="5dp"
+			        android:layout_marginLeft="5dp"
+			        android:layout_marginTop="180dp"
+			        android:onClick="onClick_Listener"/>
+		    	
+		    	<TextView
+			        android:id="@+id/Btn_CheckURL_Label"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="45dp"
+			        android:layout_marginRight="45dp"
+			        android:layout_marginTop="220dp" />
+			    
+		  </FrameLayout>      
+    	</FrameLayout>
+	</FrameLayout>
+</ScrollView>
